@@ -1,11 +1,9 @@
-package MatrixMultiplication;
-
 public class Matrix {
     int rows;
     int columns;
     int[][] matrix;
 
-    // Instantiates with known rows and columns, checks if all rows e
+
     public Matrix(int[][] mat, int n, int m) {
         for (int i = 0; i < mat.length; ++i) {
             if (mat[i].length != mat[0].length) {
@@ -17,7 +15,7 @@ public class Matrix {
         columns = m;
     }
 
-    // Instantiates matrix without a known row and column length
+
     public Matrix(int[][] mat) {
         this(mat, mat.length, mat[0].length);
     }
@@ -64,3 +62,4 @@ public class Matrix {
         return columns;
     }
 }
+
